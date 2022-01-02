@@ -1,0 +1,51 @@
+#banner {
+  background: linear-gradient(
+      rgba(247, 169, 68, 0.5) 100%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("./images/bg.jpg");
+  background-color: #6db3f2;
+
+  background-repeat: no-repeat;
+  height: 95vh;
+}
+#main-banner {
+  width: 90%;
+  height: 450px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
+}
+#first-img {
+  display: flex;
+  width: 220vh;
+  padding-right: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+#second-img {
+  display: flex;
+  width: 220vh;
+  padding-left: 150px;
+  padding-right: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+#caption {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+#caption button {
+  background-color: #7a2706;
+  border: 0px;
+  opacity: 0.6;
+  padding: 7px 40px;
+}
+#caption button a {
+  text-decoration: none;
+  color: white;
+}
