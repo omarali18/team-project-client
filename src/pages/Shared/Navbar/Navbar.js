@@ -139,7 +139,7 @@ const Navbar = () => {
                         > */}
                             <div className='search-box'>
                                 <input className='search-text' type="text" placeholder='Search' />
-                                <a className='search-btn' href=""><i className="fas fa-search"></i></a>
+                                <a className='search-btn' href="/#"><i className="fas fa-search"></i></a>
                             </div>
                         {/* </NavLink> */}
                     </li>

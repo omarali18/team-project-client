@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './pages/Home/Home/Home';
 import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -10,9 +11,6 @@ function App() {
       <Route path="/" element={<Home/>} />
       </Routes>
       </Router>
-      {/* <Home/> */}
-     <h1>this is team prohect</h1>
-     <h2>omar ali</h2>
     </div>
   );
 }
