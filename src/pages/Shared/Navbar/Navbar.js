@@ -126,13 +126,13 @@ const Navbar = () => {
                             onClick={handleClick}
                         > */}
                         <Box className="shopping-cart">
-                            <i class="fas fa-shopping-cart"></i>
+                            <i className="fas fa-shopping-cart"></i>
                         </Box>
                         {/* </NavLink> */}
                     </li>
-                         <li className="nav-item">
+                         <li className=" search-align">
                         {/* <NavLink
-                            // to="/polices"
+                            to="/polices"
                             // activeClassName="active"
                             className="nav-links"
                             onClick={handleClick}
