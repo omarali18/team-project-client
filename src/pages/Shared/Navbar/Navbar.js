@@ -32,12 +32,12 @@ const Navbar = () => {
                     </li>
                     <li className="nav-item">
                         <NavLink
-                            to="/hospitals"
+                            to="/contact"
                             // activeClassName="active"
                             className="nav-links"
                             onClick={handleClick}
                         >
-                            Hospitals
+                            Contact
                         </NavLink>
                     </li>
                     <li className="nav-item">
