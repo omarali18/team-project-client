@@ -4,11 +4,10 @@ import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import img1 from './images/image1.png'
 import img2 from './images/image2.png'
-import shoes from './clothes-images/shoes.png'
-import sunglass from './clothes-images/sunglass.png'
-import bag from './clothes-images/bag.png'
-import man from './clothes-images/man.jpg'
-import wallet from './clothes-images/wallet.png'
+import shoes from './clothes-images/shoes.jpg'
+import sunglass from './clothes-images/sunglass.webp'
+import gym from './clothes-images/gym1.jpeg'
+import wallet from './clothes-images/wallet.jpg'
 import { Link } from 'react-router-dom';
 
 
@@ -63,91 +62,31 @@ const HomeBanner = () => {
             </Carousel.Item>
             </Carousel>  
         </div>
-        <br/><br/><br/><br/>
-      <div>
-        <div style={{textAlign:'center'}}>
-        <h2 style={{textTransform:'uppercase', fontWeight:'bold', color:'orange'}}>What's New</h2>
-        <h5>Listed below our new campaings promotions and offers</h5>
-        </div><br/><br/>
-        <div id='show-off'>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <div>
           <div>
-          <div id='shoe_bag'>
-            <div className="show_of_style">
+          <div id='shoe&bag'>
             <div>
-                  <h4>This is just for testing</h4>
-                  <h6>this for testing</h6>
-                  <button>
-                        <Link to="/">view this</Link>
-                    </button>
-                </div>
-                <img 
-                src={shoes} 
-                alt=" "
-               width='150px'
-                height='150px'
-                />
+                <img src={shoes} alt=" "/>
             </div>
-            <div className="show_of_style">
             <div>
-                  <h4>This is just for testing</h4>
-                  <h6>this for testing</h6>
-                  <button>
-                        <Link to="/">view this</Link>
-                    </button>
-                </div>
-            <img 
-                src={wallet} 
-                alt=" "
-               width='150px'
-                height='150px'
-                />
+                <img src={wallet} alt=" "/>
             </div>
           </div>
-          <div id='shoe_bag'>
-            <div className="show_of_style">
+          <div id='shoe&bag'>
             <div>
-                  <h4>This is just for testing</h4>
-                  <h6>this for testing</h6>
-                  <button>
-                        <Link to="/">view this</Link>
-                    </button>
-                </div>
-              <img 
-                src={sunglass} 
-                alt=" "
-               width='150px'
-                height='150px'
-                />
+                <img src={sunglass} alt=" "/>
             </div>
-            <div className="show_of_style">
-                <div>
-                  <h4>This is just for testing</h4>
-                  <h6>this for testing</h6>
-                  <button>
-                        <Link to="/">view this</Link>
-                    </button>
-                </div>
-            <img 
-                src={bag} 
-                alt=" "
-               width='150px'
-                height='150px'
-                />
+            <div>
+                {/* <img src={ } alt=" "/> */}
             </div>
           </div>
           </div>
-          <div id="show_of_main_img">
-            <img 
-                
-                src={man} 
-                width={'300px'}
-                height="430px"
-                alt=" "
-                />
+          <div>
+                <img src={gym} alt=" "/>
           </div>
         </div>
-      </div>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
         </>
     );
 };
