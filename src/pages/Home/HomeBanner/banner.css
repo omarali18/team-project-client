@@ -39,52 +39,13 @@
   text-transform: uppercase;
   letter-spacing: 5px;
 }
-button {
+#caption button {
   background-color: #7a2706;
   border: 0px;
   opacity: 0.6;
   padding: 7px 40px;
 }
-button a {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 13px;
+#caption button a {
   text-decoration: none;
   color: white;
-}
-button:hover {
-  opacity: 0.9;
-  color: black;
-}
-button a:hover {
-  text-decoration: none;
-  color: black;
-}
-
-/*------------------- THIS IS TEH END OF HOME BANNER -------------------  */
-
-/*------------------- THIS IS FOR THE STARTING OF SHOW OF -------------------  */
-
-#show-off {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
-#shoe_bag {
-  display: flex;
-}
-.show_of_style {
-  width: 400px;
-  height: 200px;
-  background-color: #9fa3a221;
-  align-items: center;
-  padding: 5px 15px;
-  margin: 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-
-  display: flex;
-}
-#show_of_main_img {
-  margin-top: 15px;
 }
