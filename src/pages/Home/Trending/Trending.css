@@ -44,6 +44,15 @@
   opacity: 0;
   transition: all 0.45s ease-in-out;
 }
+#add_to_wishlist {
+  position: absolute;
+  background-color: #7a2706;
+  width: 90%;
+  margin-left: 10px;
+  bottom: 10%;
+  opacity: 0;
+  transition: all 0.45s ease-in-out;
+}
 button:hover a {
   color: black;
 }
@@ -53,7 +62,23 @@ button:hover a {
   bottom: 30%;
   left: 0%;
 }
+#trending_card:hover #add_to_wishlist {
+  opacity: 0.7;
+  bottom: 42%;
+  left: 0%;
+}
 #add_to_cart button:hover {
   background-color: orange;
   opacity: 0.7;
+}
+#add_to_wishlist:hover {
+  background-color: orange;
+  opacity: 0.7;
+}
+button {
+  color: white;
+  font-size: 13px;
+}
+button:hover {
+  color: black;
 }

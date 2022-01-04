@@ -121,9 +121,9 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
                     } */}
-            <li className="nav-item ">
+            <li className="nav-item " style={{ paddingRight: "20px" }}>
               <NavLink
-                to="/add_to_cart"
+                to="/cart"
                 // activeClassName="active"
                 // className="nav-links"
                 className="shopping-cart"
@@ -131,6 +131,19 @@ const Navbar = () => {
               >
                 <Box className="shopping-cart">
                   <i className="fas fa-shopping-cart"></i>
+                </Box>
+              </NavLink>
+            </li>
+            <li className="nav-item ">
+              <NavLink
+                to="/wishlist"
+                // activeClassName="active"
+                // className="nav-links"
+                className="shopping-cart"
+                onClick={handleClick}
+              >
+                <Box className="shopping-cart">
+                  <i className="fas fa-shopping-bag"></i>
                 </Box>
               </NavLink>
             </li>
