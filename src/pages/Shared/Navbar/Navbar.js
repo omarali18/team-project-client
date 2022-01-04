@@ -57,12 +57,12 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/polices"
+                to="/contact"
                 // activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Police
+                Contact
               </NavLink>
             </li>
             {/* {user.email && <li className="nav-item">
