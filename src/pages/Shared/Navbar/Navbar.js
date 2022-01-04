@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <>
-        <nav className="navbar">
+        <nav className="navbar sticky-top" sticky="top">
             <div className="nav-container">
                 <label className="nav-logo">
                 SHOPIST

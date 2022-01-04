@@ -3,6 +3,7 @@ import { red } from '@mui/material/colors';
 import React, { useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import "./Footer.css"
+import emailjs from 'emailjs-com';
 
 const Footer = () => {
     const [success, setSuccess] = useState(false)
@@ -11,14 +12,14 @@ const Footer = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        // emailjs.sendForm('service_6vx7x1q', 'template_m08x4pu', e.target, 'user_ykuLnlqbRI29KI44lZBYt')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //         setSuccess(true)
-        //         e.target.reset()
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+        emailjs.sendForm('service_f8ic1th', 'template_pxdy8la', e.target, 'user_huPYrSmTGTE3eZGm85Wp6')
+            .then((result) => {
+                console.log(result.text);
+                setSuccess(true)
+                e.target.reset()
+            }, (error) => {
+                console.log(error.text);
+            });
 
         // setSuccess(true)
     };
@@ -40,7 +41,7 @@ const Footer = () => {
                         <i className="fas fa-phone set-icon phone"></i>+880 18xxxxxxxxx
                         </Typography><br /> 
                         <Typography variant="button">
-                        <i class="fas fa-map-marker-alt set-icon location"></i>Dhanmobdi 5, Road no:7, house no: 7/B
+                        <i className="fas fa-map-marker-alt set-icon location"></i>Dhanmobdi 5, Road no:7, house no: 7/B
                         </Typography>
                 </Grid>
                 <Grid item xs={4} sm={4} md={4} className='grid-item' >
@@ -95,7 +96,7 @@ const Footer = () => {
                 <input className='p-2 w-75' type="email" name="email" placeholder="Your email" />
             </div>
             <div className="col-12 col-md-12 mt-3">
-                
+            <label htmlFor="email">Message</label> <br />
                 <textarea className='p-2 w-75' name="message" placeholder="Your message" />
             </div>
         </div>
