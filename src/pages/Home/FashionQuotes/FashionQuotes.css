@@ -1,0 +1,21 @@
+#fashion_bg {
+  background: linear-gradient(#ecb66f80 100%, rgba(97, 83, 83, 0.5) 100%),
+    url("./images/fashion-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+#fashion_bg_intro {
+  padding: 0px 20px;
+}
+#fashion_bg_intro h1 {
+  padding-top: 15%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 45px;
+}

@@ -1,0 +1,19 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#second_banner {
+  margin: 60px 20px;
+  justify-content: center;
+  display: flex;
+}
+#second_banner img {
+  margin: 40px;
+}
+
+#second_banner_intro {
+  margin: 40px;
+}
+#second_banner_intro h4 {
+  font-weight: bold;
+}

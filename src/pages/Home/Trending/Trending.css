@@ -1,0 +1,59 @@
+#trending {
+  background-color: #9fa3a221;
+  padding: 70px 0px;
+}
+#trending_intro {
+  text-align: center;
+  padding-bottom: 70px;
+}
+#trending_intro h1 {
+  text-transform: uppercase;
+  color: orange;
+}
+
+#trending_map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#trending_card {
+  position: relative;
+  border: 20px solid white;
+  background-color: #9fa3a221;
+  margin: 20px;
+}
+#trending_card img {
+  border: 1px solid #9fa3a221;
+}
+#trending_card_intro {
+  padding-left: 10px;
+}
+#trending_card_intro small {
+  color: orange;
+}
+#trending_card_intro p {
+  color: gray;
+}
+
+#add_to_cart button {
+  position: absolute;
+  background-color: #7a2706;
+  width: 90%;
+  margin-left: 10px;
+  bottom: 10%;
+  opacity: 0;
+  transition: all 0.45s ease-in-out;
+}
+button:hover a {
+  color: black;
+}
+
+#trending_card:hover #add_to_cart button {
+  opacity: 0.7;
+  bottom: 30%;
+  left: 0%;
+}
+#add_to_cart button:hover {
+  background-color: orange;
+  opacity: 0.7;
+}
