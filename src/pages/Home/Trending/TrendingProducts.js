@@ -49,7 +49,7 @@ const TrendingProducts = ({ trending }) => {
           <div>
             <div id="add_to_cart">
               <button onClick={add_to_cart}>
-                <Link to="/">Add to cart</Link>
+                <Link to="/cart">Add to cart</Link>
               </button>
             </div>
             <div></div>

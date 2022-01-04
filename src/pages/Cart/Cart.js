@@ -1,18 +1,51 @@
 import React, { useEffect, useState } from "react";
 import DisplayCart from "./DisplayCart";
+import "./Cart.css";
+import CartBanner from "./CartBanner";
 
 const Cart = () => {
-  const [cartProduct, setCartProduct] = useState([]);
-  console.log(cartProduct);
+  const [cartProducts, setCartProducts] = useState([]);
+  console.log(cartProducts);
   useEffect(() => {
     fetch("http://localhost:5000/cart")
       .then((res) => res.json())
-      .then((data) => setCartProduct(data));
+      .then((data) => setCartProducts(data));
   }, []);
   return (
     <div>
-      {cartProduct.map((cartProducts) => (
-        <DisplayCart key={cartProducts.key} cartProduct={cartProducts} />
+      <CartBanner />
+      <div id="action">
+        <h3
+          style={{
+            textTransform: "uppercase",
+            paddingTop: "50px",
+            color: "orange",
+            fontWeight: "bold",
+            paddingLeft: "50px",
+          }}
+        >
+          Review Order
+        </h3>
+        <h3
+          style={{
+            textTransform: "uppercase",
+            paddingTop: "50px",
+            color: "orange",
+            fontWeight: "bold",
+            paddingLeft: "50px",
+          }}
+        >
+          Action
+        </h3>
+      </div>
+
+      {cartProducts.map((cartProduct) => (
+        <DisplayCart
+          key={cartProduct.key}
+          cartProduct={cartProduct}
+          cartProducts={cartProducts}
+          setCartProducts={setCartProducts}
+        />
       ))}
     </div>
   );
