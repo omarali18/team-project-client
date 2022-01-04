@@ -24,7 +24,6 @@ const Navbar = () => {
         <div className="nav-container">
           <label className="nav-logo">SHOPIST</label>
 
-<<<<<<< HEAD
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
@@ -67,58 +66,6 @@ const Navbar = () => {
               </NavLink>
             </li>
             {/* {user.email && <li className="nav-item">
-=======
-    return (
-        <>
-        <nav className="navbar">
-            <div className="nav-container">
-                <label className="nav-logo">
-                SHOPIST
-                </label>
-
-                <ul className={click ? "nav-menu active" : "nav-menu"}>
-                    <li className="nav-item">
-                        <NavLink
-                            to="/"
-                            // activeClassName="active"
-                            className="nav-links"
-                            onClick={handleClick}
-                        >
-                            Home
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink
-                            to="/contact"
-                            // activeClassName="active"
-                            className="nav-links"
-                            onClick={handleClick}
-                        >
-                            Contact
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink
-                            to="/schools"
-                            // activeClassName="active"
-                            className="nav-links"
-                            onClick={handleClick}
-                        >
-                            School
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink
-                            to="/polices"
-                            // activeClassName="active"
-                            className="nav-links"
-                            onClick={handleClick}
-                        >
-                            Police
-                        </NavLink>
-                    </li>
-                    {/* {user.email && <li className="nav-item">
->>>>>>> 176719bbd52dd7e8e96fc1149b80fd9d0181be85
                         <NavLink
                             to="/dashboard"
                             // activeClassName="active"
@@ -174,7 +121,6 @@ const Navbar = () => {
                                 </NavLink>
                             </li>
                     } */}
-<<<<<<< HEAD
             <li className="nav-item ">
               <NavLink
                 to="/add_to_cart"
@@ -207,41 +153,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-=======
-                         <li className="nav-item ">
-                        {/* <NavLink
-                            to="/polices"
-                            // activeClassName="active"
-                            // className="nav-links"
-                            className="shopping-cart"
-                            onClick={handleClick}
-                        > */}
-                        <Box className="shopping-cart">
-                            <i className="fas fa-shopping-cart"></i>
-                        </Box>
-                        {/* </NavLink> */}
-                    </li>
-                         <li className=" search-align">
-                        {/* <NavLink
-                            to="/polices"
-                            // activeClassName="active"
-                            className="nav-links"
-                            onClick={handleClick}
-                        > */}
-                            <div className='search-box'>
-                                <input className='search-text' type="text" placeholder='Search' />
-                                <a className='search-btn' href="/#"><i className="fas fa-search"></i></a>
-                            </div>
-                        {/* </NavLink> */}
-                    </li>
-
-                </ul>
-                <div className="nav-icon" onClick={handleClick}>
-                    <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
-                </div>
-            </div>
-        </nav>
->>>>>>> 176719bbd52dd7e8e96fc1149b80fd9d0181be85
     </>
   );
 };
