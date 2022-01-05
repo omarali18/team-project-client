@@ -14,7 +14,7 @@ const DisplayWishlist = ({
       img: img,
       intro: intro,
     };
-    fetch("http://localhost:5000/cart", {
+    fetch("https://team-project-server-side.herokuapp.com/cart", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -31,7 +31,7 @@ const DisplayWishlist = ({
   };
 
   const handleDelete = (id) => {
-    const url = `http://localhost:5000/wishlist/${id}`;
+    const url = `https://team-project-server-side.herokuapp.com/wishlist/${id}`;
     fetch(url, {
       method: "DELETE",
     })

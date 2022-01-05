@@ -19,7 +19,7 @@ const TrendingProducts = ({ trending }) => {
       img: imageUrl,
       intro: intro,
     };
-    fetch("http://localhost:5000/cart", {
+    fetch("https://team-project-server-side.herokuapp.com/cart", {
       method: "POST",
       headers: {
         "content-type": "application/json",

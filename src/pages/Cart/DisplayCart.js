@@ -6,7 +6,7 @@ const DisplayCart = ({ cartProduct, cartProducts, setCartProducts }) => {
   const { _id, name, img, price, intro } = cartProduct;
 
   const handleDelete = (id) => {
-    const url = `http://localhost:5000/cart/${id}`;
+    const url = `https://team-project-server-side.herokuapp.com/cart/${id}`;
     fetch(url, {
       method: "DELETE",
     })

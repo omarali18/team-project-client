@@ -6,7 +6,7 @@ const Purches = () => {
   const [purches, setPurches] = useState({});
   console.log(purches);
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://team-project-server-side.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => {
         const d = data.find((p) => p._id === id);

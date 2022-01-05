@@ -6,7 +6,7 @@ const Trending = () => {
   const [trendings, setTrending] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/trending")
+    fetch("https://team-project-server-side.herokuapp.com/trending")
       .then((res) => res.json())
       .then((data) => setTrending(data));
   }, []);
