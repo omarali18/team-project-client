@@ -25,9 +25,9 @@ const Login = () => {
   const handleOnBlurLogin = (e) => {
     const field = e.target.name;
     const value = e.target.value;
-    console.log(e.target.name, e.target.value);
     const newUser = { ...loginData };
     newUser[field] = value;
+    // console.log("new user", newUser);
     setLoginData(newUser);
   };
   const handleOnBlurRegister = (e) => {
@@ -39,7 +39,7 @@ const Login = () => {
   };
 
   const handleOnSubmitLogin = (e) => {
-    console.log("login", loginData);
+    // console.log("loginnnn", loginData.email, loginData.password,);
     loginEmailPassword(loginData.email, loginData.password, redirect, navigate);
     e.preventDefault();
   };
@@ -67,9 +67,6 @@ const Login = () => {
 
   return (
     <Box sx={{ mb: 10 }}>
-      {/* 
-            display: 'flex', justifyContent: 'center', alignItems: 'center'   , width:{md:"75%"}
-             */}
       <Grid container spacing={2}>
         <Grid item xs={12} md={6}>
           <Box
@@ -118,7 +115,7 @@ const Login = () => {
                     fontWeight: "bold",
                     fontSize: "15px",
                   }}
-                  onClick={handleOnBlurLogin}
+                  // onClick={handleOnBlurLogin}
                   type="submit"
                   variant="contained"
                 >
@@ -169,7 +166,10 @@ const Login = () => {
                 variant="outlined"
                 required
               />
-              <TextField
+
+              <fieldset>
+                Enter your valid email.
+                <TextField
                 sx={{ width: 1 }}
                 onBlur={handleOnBlurRegister}
                 id="outlined-basic"
@@ -179,6 +179,17 @@ const Login = () => {
                 variant="outlined"
                 required
               />
+              </fieldset>
+              {/* <TextField
+                sx={{ width: 1 }}
+                onBlur={handleOnBlurRegister}
+                id="outlined-basic"
+                label="email"
+                name="email"
+                type="email"
+                variant="outlined"
+                required
+              /> */}
               <TextField
                 sx={{ width: 1, my: 3 }}
                 onBlur={handleOnBlurRegister}

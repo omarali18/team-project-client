@@ -55,15 +55,14 @@ const useFirebase = () => {
     sendEmailVerification(auth.currentUser).then(() => {});
   };
 
-  console.log("redister", user);
   // Login email password function
 
   const loginEmailPassword = (email, password, location, navigate) => {
+
     setIsLoading(true);
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
         navigate(location);
-        console.log("login hoyse", result.user);
         setAuthError("");
       })
       .catch((error) => {
@@ -79,7 +78,6 @@ const useFirebase = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         const user = result.user;
-        console.log(user);
         setAuthError("");
         // saveUsers(user.email, user.displayName, "PUT", user.password, navigate, location)
         navigate(location);
