@@ -48,7 +48,7 @@ const Footer = () => {
             </Typography>
             <br />
             <Typography variant="button">
-              <i class="fas fa-map-marker-alt set-icon location"></i>Dhanmobdi
+              <i className="fas fa-map-marker-alt set-icon location"></i>Dhanmobdi
               5, Road no:7, house no: 7/B
             </Typography>
           </Grid>

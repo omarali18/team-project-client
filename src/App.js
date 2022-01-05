@@ -7,20 +7,26 @@ import Footer from "./pages/Shared/Footer/Footer";
 import Purches from "./pages/Privet/Purches/Purches";
 import Wishlisht from "./pages/Wishlisht/Wishlisht";
 import Cart from "./pages/Cart/Cart";
+import Login from "./pages/Login/Login/Login";
+import AuthProvider from "./Context/AuthProvider/AuthProvider";
 
 function App() {
   return (
     <div>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/wishlist" element={<Wishlisht />} />
-        </Routes>
-        <Footer />
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/wishlist" element={<Wishlisht />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </AuthProvider>
+     
     </div>
   );
 }

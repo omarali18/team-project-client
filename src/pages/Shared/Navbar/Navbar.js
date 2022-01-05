@@ -1,12 +1,13 @@
 import { Box, Button } from "@mui/material";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../../Hooks/useAuth";
 // import useAuth from '../../../Hooks/useAuth';
 import "./Navbar.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  // const { user, logout } = useAuth()
+  const { user, handleLogout } = useAuth()
 
   const handleClick = () => setClick(!click);
 
@@ -85,7 +86,7 @@ const Navbar = () => {
                 Dashboard
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 to="/login"
                 //    activeClassName="active"
@@ -94,9 +95,9 @@ const Navbar = () => {
               >
                 Login
               </NavLink>
-            </li>
+            </li> */}
 
-            {/* {
+            {
                         user.email ?
 
                             <li className="nav-item">
@@ -106,7 +107,7 @@ const Navbar = () => {
                                     className="nav-links"
                                     onClick={handleClick}
                                 >
-                                    <Button className="logout-btn" sx={{ color: "white" }} onClick={logout}>logOut</Button>
+                                    <Button className="logout-btn" sx={{ color: "black" }} onClick={handleLogout}>logOut</Button>
                                 </NavLink>
                             </li>
                             :
@@ -120,7 +121,7 @@ const Navbar = () => {
                                     Login
                                 </NavLink>
                             </li>
-                    } */}
+                    }
             <li className="nav-item " style={{ paddingRight: "20px" }}>
               <NavLink
                 to="/cart"
