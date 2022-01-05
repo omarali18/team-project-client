@@ -33,12 +33,11 @@
   width: 35%;
   padding: 8px;
   font-size: 20px;
-  /* border: none; */
-  border: 2px solid rgb(148, 148, 70);
-  border-radius: 5px;
+  border: 1px solid rgb(148, 148, 70);
+  outline: none;
 }
-.text-field:hover {
-  border: 2px solid rgb(91, 91, 238);
+.text-field:focus {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .textaria-field {
   height: 200px;

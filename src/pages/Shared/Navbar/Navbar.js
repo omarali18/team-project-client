@@ -37,22 +37,22 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/hospitals"
+                to="/dashboard"
                 // activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Hospitals
+                Dashboard
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
-                to="/schools"
+                to="/about"
                 // activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                School
+                About
               </NavLink>
             </li>
             <li className="nav-item">
@@ -75,16 +75,6 @@ const Navbar = () => {
                             Dashboard
                         </NavLink>
                     </li>} */}
-            <li className="nav-item">
-              <NavLink
-                to="/dashboard"
-                // activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Dashboard
-              </NavLink>
-            </li>
             <li className="nav-item">
               <NavLink
                 to="/login"

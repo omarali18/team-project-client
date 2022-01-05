@@ -8,12 +8,32 @@ body {
   display: flex;
 }
 #second_banner img {
-  margin: 40px;
+  width: 40%;
 }
 
 #second_banner_intro {
   margin: 40px;
+  width: 50%;
 }
 #second_banner_intro h4 {
   font-weight: bold;
+}
+#second_banner_intro p {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  #second_banner {
+    display: flex;
+    flex-direction: column;
+    margin: 20pxpx;
+  }
+  #second_banner img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #second_banner_intro {
+    margin: 0px;
+    width: 100%;
+  }
 }

@@ -34,10 +34,19 @@
   justify-content: space-evenly;
   margin: 0 auto;
 }
+#first-img img {
+  width: 40%;
+  height: 450px;
+}
+#second-img img {
+  width: 50%;
+  height: 450px;
+}
 
 #caption {
   text-transform: uppercase;
   letter-spacing: 5px;
+  width: 50%;
 }
 button {
   background-color: #7a2706;
@@ -87,4 +96,20 @@ button:hover a {
 }
 #show_of_main_img {
   margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* #first-img {
+    display: block;
+  }
+  #first-img {
+    width: 0%;
+  }
+  #caption {
+    width: 100%;
+  } */
+  #second-img {
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
 }

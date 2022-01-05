@@ -72,9 +72,9 @@ const Contact = () => {
         </Typography>
       </div>
       <Box sx={{ ml: { md: 15, sm: 8, xs: 5 }, mt: { md: 5, xs: 5 } }}>
-        <Typography variant="h3" sx={{ fontWeight: { md: "bold" } }}>
+        <h3 style={{ fontWeight: "bold", color: "orange", fontSize: "50px" }}>
           Contact Form
-        </Typography>
+        </h3>
         <div className="success-message">
           {success && (
             <p>
@@ -94,6 +94,7 @@ const Contact = () => {
                 name="name"
                 placeholder="Your name"
                 className="text-field"
+                required
               />{" "}
               <br />
               <label htmlFor="email" className="field-level">
@@ -105,6 +106,7 @@ const Contact = () => {
                 name="email"
                 placeholder="Your email"
                 className="text-field"
+                required
               />
             </div>
             <div className="">
@@ -116,12 +118,21 @@ const Contact = () => {
                 name="message"
                 placeholder="Your message"
                 className=" text-field textaria-field"
+                required
               />
             </div>
           </div>
           <div className="">
             <div className="">
-              <button className="mail-btn">SEND MEAL</button>
+              <button
+                style={{
+                  padding: "10px 30px",
+                  fontWeight: "bold",
+                  fontSize: "15px",
+                }}
+              >
+                SEND MEAL
+              </button>
             </div>
           </div>
         </form>

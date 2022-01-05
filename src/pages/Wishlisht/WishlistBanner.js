@@ -6,7 +6,7 @@ const WishlistBanner = () => {
     <div id="cart">
       <div>
         <h5>
-          <Link to="/">Home</Link>/Cart
+          <Link to="/">Home</Link>/Wishlisht
         </h5>
         <h1>Wishlist</h1>
       </div>

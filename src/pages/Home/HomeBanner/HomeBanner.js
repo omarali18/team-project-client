@@ -20,7 +20,7 @@ const HomeBanner = () => {
         <Carousel fade id="main-banner" variant="dark">
           <Carousel.Item>
             <div id="first-img">
-              <img src={img1} width="500px" height="400px" />
+              <img src={img1} />
 
               <div id="caption">
                 <p style={{ color: "orange" }}>Man Woman fashion Collection</p>
@@ -46,7 +46,7 @@ const HomeBanner = () => {
                   <Link to="/">view this</Link>
                 </button>
               </div>
-              <img src={img2} width="500px" height="400px" />
+              <img src={img2} />
             </div>
           </Carousel.Item>
         </Carousel>

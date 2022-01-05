@@ -4,9 +4,9 @@ import Navbar from "./pages/Shared/Navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./pages/Shared/Footer/Footer";
-import Purches from "./pages/Privet/Purches/Purches";
 import Wishlisht from "./pages/Wishlisht/Wishlisht";
 import Cart from "./pages/Cart/Cart";
+import About from "./pages/About/About";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/wishlist" element={<Wishlisht />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </Router>
